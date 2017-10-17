@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Book a Wash with Waxxd</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script type="text/javascript" src="jquery.timepicker.js"></script>
+  <link rel="stylesheet" type="text/css" href="jquery.timepicker.css" />
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" href="http://jonthornton.github.io/jquery-timepicker/jquery.timepicker.js"></script>
+	<link rel="stylesheet" type="text/css" href="http://jonthornton.github.io/jquery-timepicker/jquery.timepicker.css">
+	<script type="text/javascript" href="http://jonthornton.github.io/jquery-timepicker/lib/bootstrap-datepicker.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-datepicker.css">
+
+	<script>
+	$( function() {
+	$( "#datepicker" ).datepicker();
+	});
+
+			$( function() {
+					$("#basicExample").timepicker(
+						{'minTime': '8:00am',
+      			'maxTime': '6:30pm',});
+						});
+
+	</script>
+</head>
+
+<body id="win">
+	<div class="page">
+		<div class="header header-news">
+			<a href="index.html" id="logo"><img src="images/logo.png" alt="logo"></a>
+			<ul>
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="mission.html">Mission</a>
+				</li>
+				<li class="selected">
+					<a href="booking.html">Booking</a>
+				</li>
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+			<div class="featured">
+				<h4>Featured:</h4>
+				<h3>Book your car wash here</h3>
+				<p>
+					If your are interested in helping at-risk kids by providing them with job opportunity, here is the great place to do that. Order a car wash today on WAXXD.NET.  Service will be fulfilled by young individuals mentored by Vision Ministry. It will help them to get a feeling that they are on a right path while doing real work and earning some money. And you will get your car washed at decent price. Please, take a look at our packages.
+				</p>
+				<!--<button>View More</button>-->
+			</div>
+		</div>
+		<div class="body">
+
+
+			<div class="sidebar">
+				<div>
+					<h3>Connect</h3>
+					<a href="https://twitter.com/iglesia1914?lang=en" id="twitter">twitter</a> <a href="https://www.facebook.com/MielRiverside/" id="fb">fb</a> <a href="https://plus.google.com/+IGLESIADECRISTOMIELRIVERSIDE/posts/MW2YVwQPMLL" id="googleplus">google+</a>
+				</div>
+				<div>
+					<div>
+						<h3>Good Reads</h3>
+						<ul>
+							<li>
+								<h4><a href="https://www.amazon.com/Makin-Story-Hope-Kirk-Blackard/dp/1490462864">Makin' It: A Story of Hope</a></h4>
+								<p>
+									MAKIN’ IT: A STORY OF HOPE tells of “Tony,” his troubled life, and the U-turn he made to real hope for the future.
+								</p>
+							</li>
+							<li>
+								<h4><a href="https://www.amazon.com/Hes-Not-Lazy-Empowering-Believe/dp/1454916877">He's Not Lazy: Empowering Your Son to Believe In Himself</a></h4>
+								<p>
+									An extremely well written and compelling guide for parents who struggle with how to motivate their teenage sons to do better in school and in life.
+								</p>
+							</li>
+							<li>
+								<h4><a href="https://www.amazon.com/Born-Be-Wild-Teens-Risks/dp/0143129791">Born to Be Wild: Why Teens Take Risks, and How We Can Help Keep Them Safe</a></h4>
+								<p>
+								This is an excellent book that describes what is happening in an adolescent’s brain and how it affects his behavior.
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div>
+					<!--<div>
+						<h3>Miscellaneous link one</h3>
+						<ul>
+							<li>
+								<h4><a href="news.html">Link Title Name</a></h4>
+								<p>
+									Lorem Ipsum Dolor Sit Amet giberrish samon sanctos. imo.
+								</p>
+							</li>
+							<li>
+								<h4><a href="news.html">Link Title Name</a></h4>
+								<p>
+									Lorem Ipsum Dolor Sit Amet giberrish samon sanctos. imo.
+								</p>
+							</li>
+						</ul>
+					</div>-->
+				</div>
+			</div>
+
+
+			<div class="content">
+
+				<h4>Available packages:</h4>
+				<ul>
+					<li>
+						 <a><img src="images/cleaning1.jpg" alt=""></a>
+						<div>
+							<h3>Package One: Basic Hand Wash</h3>
+							<p>
+								Full exterior hand wash with windows cleaning outside only.
+								<br>
+								$25/$35
+							</p>
+						 <button id="readMore1">Read More</button>
+						</div>
+						<!-- Modal -->
+						<div id="moreInfo1" class="modal">
+						<div class="modal-content">
+						<div class="modal-header">
+						<div class="close">&times;</div>
+						<h3>Package One</h3>
+						</div>
+						<div class="modal-body">
+							<p style="font-size: 12px; color: #608111" >All details about package one:</p>
+							<p style="font-size: 12px; color: #232123">&#8226 Full Exterior Hand Wash.</p>
+							<p style="font-size: 12px; color: #232123">&#8226 Windows cleaning Outside Only.</p>
+							<p style="font-size: 12px; color: #232123">&#8226 Cars: $25; Suvs: $30</p>
+						</div>
+						<div class="modal-footer">
+							<h6>$25/$30</h6>
+						</div>
+					</div>
+					</div>
+					</li>
+					<li>
+					 <a><img src="images/cleaning2.jpg" alt=""></a>
+						<div>
+							<h3>Package Two: Clay Bar Treatment & Wax</h3>
+							<p>
+								Full exterior hand wash (package one) plus clay bar treatment.
+								<br>
+								$80
+							</p>
+							<button id="readMore2">Read More</button>
+						</div>
+							<!-- Modal -->
+							<div id="moreInfo2" class="modal">
+							<div class="modal-content">
+							<div class="modal-header">
+							<div class="close">&times;</div>
+							<h3>Package Two</h3>
+							</div>
+							<div class="modal-body">
+								<p style="font-size: 12px; color: #608111">All details about package two:</p>
+								<p style="font-size: 12px; color: #232123">&#8226 Full Exterior Hand Wash.</p>
+								<p style="font-size: 12px; color: #232123">&#8226 Windows cleaning Outside Only.</p>
+								<p style="font-size: 12px; color: #232123">&#8226 Full Exfoliation and Decontamination of Clear Coat.</p>
+								<p style="font-size: 12px; color: #232123">&#8226 All Exterior Painted Surfaces Waxed With High Tech Wax.</p>
+								<p style="font-size: 12px; color: #232123">&#8226 Create A Baby Smooth Finish & Wet Look Shine.</p>
+							</div>
+							<div class="modal-footer">
+								<h6>$80</h6>
+							</div>
+						</div>
+						</div>
+
+					</li>
+					<li>
+						 <a><img src="images/cleaning3.jpg" alt=""></a>
+						<div>
+							<h3>Package Three: Interior Detail</h3>
+							<p>
+								Full exterior hand wash (package one) plus thorough interior cleaning.
+								<br>
+								$80/$100
+							</p>
+							<button id="readMore3">Read More</button>
+						</div>
+						<div id="moreInfo3" class="modal">
+						<div class="modal-content">
+						<div class="modal-header">
+						<div class="close">&times;</div>
+						<h3>Package Three</h3>
+						</div>
+						<div class="modal-body">
+							<p style="font-size: 12px; color: #608111" >All details about package three:</p>
+							<p style="font-size: 12px; color: #232123">&#8226 Full Exterior Hand Wash.</p>
+							<p style="font-size: 12px; color: #232123">&#8226 Full Interior Cleaning.</p>
+							<p style="font-size: 12px; color: #232123">&#8226 Windows cleaning Inside and Outside.</p>
+							<p style="font-size: 12px; color: #232123">&#8226 Deep Carpet Cleaning.</p>
+							<p style="font-size: 12px; color: #232123">&#8226 Thorough Leather/Upholstery Seats Cleaning.</p>
+							<p style="font-size: 12px; color: #232123">&#8226 $20 extra for most Suvs</p>
+							<p style="font-size: 12px; color: #232123">&#8226 Keeping It Showready.</p>
+						</div>
+						<div class="modal-footer">
+							<h6>$80/$100</h6>
+						</div>
+					</div>
+					</div>
+					</li>
+					<li>
+						 <a><img src="images/cleaning4.jpg" alt=""></a>
+						<div>
+							<h3>Package Four: Exterior Detail</h3>
+							<p>
+								Full exterior hand wash (package one) plus clay bar treatment with tire cleaning and treatment.
+								<br>
+								$125
+							</p>
+							<button id="readMore4">Read More</button>
+						</div>
+						<div id="moreInfo4" class="modal">
+						<div class="modal-content">
+						<div class="modal-header">
+						<div class="close">&times;</div>
+						<h3>Package Four</h3>
+						</div>
+						<div class="modal-body">
+							<p style="font-size: 12px; color: #608111" >All details about package four:</p>
+							<p style="font-size: 12px; color: #232123">&#8226 Full Exterior Hand Wash.</p>
+							<p style="font-size: 12px; color: #232123">&#8226 Windows cleaning Outside Only.</p>
+							<p style="font-size: 12px; color: #232123">&#8226 Full Exfoliation and Decontamination of Clear Coat.</p>
+							<p style="font-size: 12px; color: #232123">&#8226 All Exterior Painted Surfaces Waxed With High Tech Wax.</p>
+							<p style="font-size: 12px; color: #232123">&#8226 Create A Baby Smooth Finish & Wet Look Shine.</p>
+							<p style="font-size: 12px; color: #232123">&#8226 Wheels and Tires Cleaned.</p>
+							<p style="font-size: 12px; color: #232123">&#8226 Molding and Tires Dressed With Water Based Dressing.</p>
+
+						</div>
+						<div class="modal-footer">
+							<h6>$125</h6>
+						</div>
+					</div>
+					</div>
+					</li>
+					<li>
+						 <a><img src="images/cleaning5.jpg" alt=""></a>
+						<div>
+							<h3>Package Five: Platinum Detail</h3>
+							<p>
+								Full exterior and interior cleaning (package one and two) and complete detailing work (package three and five).
+								<br>
+								$200/$240
+							</p>
+							<button id="readMore5">Read More</button>
+						</div>
+						<div id="moreInfo5" class="modal">
+						<div class="modal-content">
+						<div class="modal-header">
+						<div class="close">&times;</div>
+						<h3>Package Five</h3>
+						</div>
+						<div class="modal-body">
+							<p style="font-size: 12px; color: #608111" >All details about package five:</p>
+							<p style="font-size: 12px; color: #232123">&#8226 Full Exterior Hand Wash.</p>
+							<p style="font-size: 12px; color: #232123">&#8226 Full Interior Cleaning.</p>
+							<p style="font-size: 12px; color: #232123">&#8226 Windows cleaning Inside and Outside.</p>
+							<p style="font-size: 12px; color: #232123">&#8226 Deep Carpet Cleaning.</p>
+							<p style="font-size: 12px; color: #232123">&#8226 Thorough Leather/Upholstery Seats Cleaning.</p>
+							<p style="font-size: 12px; color: #232123">&#8226 Full Exfoliation and Decontamination of Clear Coat.</p>
+							<p style="font-size: 12px; color: #232123">&#8226 All Exterior Painted Surfaces Waxed With High Tech Wax.</p>
+							<p style="font-size: 12px; color: #232123">&#8226 Create A Baby Smooth Finish & Wet Look Shine.</p>
+							<p style="font-size: 12px; color: #232123">&#8226 Wheels and Tires Cleaned.</p>
+							<p style="font-size: 12px; color: #232123">&#8226 Molding and Tires Dressed With Water Based Dressing.</p>
+							<p style="font-size: 12px; color: #232123">&#8226 Keeping It Perfectly Showready.</p>
+							<p style="font-size: 12px; color: #232123">&#8226 $40 extra for full size trucks.</p>
+
+						</div>
+						<div class="modal-footer">
+							<h6>$200/$240</h6>
+						</div>
+					</div>
+					</div>
+					</li>
+				</ul>
+				<h4 style="margin: 30px 0 0 0">Book a service package here:</h4>
+
+				<form name="bookingform" method="post" action="send_wash_booking.php">
+
+					<label for="subject">
+					 <select name="Package">
+					 <option value="Package One">Package One: Exterior Hand Wash - $25/$30 price</option>
+					 <option value="Package Two">Package Two: Clay Bar Treatment - $80</option>
+					 <option value="Package Three">Package Three: Exterior and Interior Cleaning  - $80/$100</option>
+					 <option value="Package Four">Package Four: Exterior Detail - $125</option>
+					 <option value="Package Four">Package Five: Platinum Detail - $200/$240</option>
+					 </select>
+					 <!-- <input type="text" id="package" value="Package" onblur="this.value=!this.value?'Package':this.value;" onfocus="this.select()" onclick="this.value='';" -->
+						Pick service package here.</label>
+
+					  <label for="name">
+						<input type="text" name="Name" id="name" value="Full Name" onblur="this.value=!this.value?'Full Name':this.value;" onfocus="this.select()" onclick="this.value='';">
+						Enter your full name here.</label>
+
+						<label for="email">
+							<input style ="margin-bottom: 12px" type="text" name="Email" id="email" value="Email Address" onblur="this.value=!this.value?'Email Address':this.value;" onfocus="this.select()" onclick="this.value='';">
+							Enter your email address here.</label>
+
+						<label for="phone">
+						<input type="text" name="Phone" id="phone" value="Phone" onblur="this.value=!this.value?'Phone':this.value;" onfocus="this.select()" onclick="this.value='';">
+						Enter your phone number here.</label>
+
+
+							  <label for="address">
+								<input type="text"  name="Address" id="address" value="Address" onblur="this.value=!this.value?'Address':this.value;" onfocus="this.select()" onclick="this.value='';">
+								Enter your address here.</label>
+
+								<label for="Date">
+								<input type="date" name="Date" id="datepicker" value="Date" onblur="this.value=!this.value?'Date':this.value;" onfocus="this.select()" onclick="this.value='';">
+								Date preference.</label>
+
+
+								<label for="Time">
+								<input type="time" name="Time" id="basicExample" value="Time" onblur="this.value=!this.value?'Time':this.value;" onfocus="this.select()" onclick="this.value='';">
+								Time preference.</label>
+
+								<label for="Car">
+								<input type="text" name="Car" id="car" value="Car Model" onblur="this.value=!this.value?'Car':this.value;" onfocus="this.select()" onclick="this.value='';">
+								Enter your car model.</label>
+
+
+<!--
+					<label for="subscribe" class="subscribe">
+						<input type="checkbox" id="subscribe">
+						Subscribe to newsletter</label>
+					<label for="agree" class="agree">
+						<input type="checkbox" id="agree">
+						I agree to the Terms and Conditions</label>
+					-->
+					<button style="margin: 20px 0 0 270px;" type="submit">Book</button>
+				</form>
+
+
+
+			</div>
+		</div>
+		<div class="footer">
+			<ul>
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="about.html">About</a>
+				</li>
+				<li>
+					<a href="news.html">News</a>
+				</li>
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+			<p>
+				&#169; Copyright &#169; 2017.Company name all rights reserved
+			</p>
+		</div>
+	</div>
+
+
+	<script>
+
+	var modal1 = document.getElementById('moreInfo1');
+	var btn1 = document.getElementById("readMore1");
+	var modal2 = document.getElementById('moreInfo2');
+	var btn2 = document.getElementById("readMore2");
+	var modal3 = document.getElementById('moreInfo3');
+	var btn3 = document.getElementById("readMore3");
+	var modal4 = document.getElementById('moreInfo4');
+	var btn4 = document.getElementById("readMore4");
+	var modal5 = document.getElementById('moreInfo5');
+	var btn5 = document.getElementById("readMore5");
+
+	var close1 = document.getElementsByClassName("close")[0];
+	var close2 = document.getElementsByClassName("close")[1];
+	var close3 = document.getElementsByClassName("close")[2];
+	var close4 = document.getElementsByClassName("close")[3];
+	var close5 = document.getElementsByClassName("close")[4];
+
+	var win = document.getElementsByClassName("win");
+
+	btn1.onclick = function() {
+	    modal1.style.display = "block";
+	}
+	btn2.onclick = function() {
+	    modal2.style.display = "block";
+	}
+	btn3.onclick = function() {
+			modal3.style.display = "block";
+	}
+	btn4.onclick = function() {
+			modal4.style.display = "block";
+	}
+
+	btn5.onclick = function() {
+			modal5.style.display = "block";
+	}
+	// When the user clicks on <span> (x), close the modal
+	close1.onclick = function() {
+	    modal1.style.display = "none";
+	}
+	close2.onclick = function() {
+			modal2.style.display = "none";
+	}
+	close3.onclick = function() {
+			modal3.style.display = "none";
+	}
+	close4.onclick = function() {
+			modal4.style.display = "none";
+	}
+	close5.onclick = function() {
+			modal5.style.display = "none";
+	}
+	// When the user clicks anywhere outside of the modal, close it
+	win.onclick = function(event) {
+	    if (event.target == modal) {
+	        modal.style.display = "none";
+	    }
+	}
+
+</script>
+</body>
+</html>

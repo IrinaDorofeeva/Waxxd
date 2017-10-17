@@ -1,0 +1,984 @@
+/* Website template by freewebsitetemplates.com */
+/*------------------------- Fonts ---------------------------*/
+@font-face {
+	font-family: 'Conv_OpenSans-Regular';
+	src: url('../fonts/OpenSans-Regular.eot');
+	src: url('../fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),  url('../fonts/OpenSans-Regular.woff') format('woff'),  url('../fonts/OpenSans-Regular.ttf') format('truetype'),  url('../fonts/OpenSans-Regular.svg#OpenSans-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_JockeyOne-Regular';
+	src: url('../fonts/JockeyOne-Regular.eot');
+	src: url('../fonts/JockeyOne-Regular.eot?#iefix') format('embedded-opentype'),  url('../fonts/JockeyOne-Regular.woff') format('woff'),  url('../fonts/JockeyOne-Regular.ttf') format('truetype'),  url('../fonts/JockeyOne-Regular.svg#JockeyOne-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+/*------------------------- Layout styles ------------------------*/
+body {
+	margin:0;
+	font-family:Arial, Helvetica, sans-serif;
+	background:url(../images/bg-body.jpg) no-repeat center top #111111;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+a {
+	outline:none;
+}
+a img {
+	border:0;
+	display:block;
+}
+.page {
+	background:url(../images/bg-page.png) no-repeat center 145px;
+	width:960px;
+	margin:0 auto;
+}
+
+
+/*------------------------- Header -------------------------*/
+.header {
+	background:url(../images/zbg-header.jpg) no-repeat;
+	padding:28px 0 0;
+	position:relative;
+
+}
+.header a#logo {
+	display:block;
+	width:625px;
+	height:87px;
+	margin:0 auto;
+}
+.header a#logo img {
+}
+.header ul {
+	padding:0;
+	margin:29px 0 0;
+	list-style:none;
+	overflow:hidden;
+}
+.header ul li {
+	float:left;
+	background:url(../images/bg-nav.jpg) no-repeat;
+	width:240px;
+	height:48px;
+}
+.header ul li.selected {
+	background:url(../images/bg-nav-selected.jpg) no-repeat;
+	width:240px;
+	height:48px;
+}
+.header ul li a {
+	float:left;
+	font-family: 'Conv_JockeyOne-Regular';
+	font-size:18px;
+	line-height:24px;
+	text-decoration:none;
+	text-shadow:0 2px 0 #2a2d28;
+	color:#fff;
+	margin:11px 0 0 15px;
+	display:block;
+}
+.header ul li a:hover {
+	color:#fc9131;
+}
+.header ul li span {
+	display:block;
+	float:right;
+	font-family: 'Conv_OpenSans-Regular';
+	color:#525252;
+	font-size:10px;
+	line-height:24px;
+	margin:14px 15px 0 0;
+}
+.header div.featured {
+	background:url(../images/home-image.png) no-repeat right 31px;
+	height:420px;
+}
+.header div.featured h2 {
+	margin:0;
+	font-family: 'Conv_JockeyOne-Regular';
+	font-size:32px;
+	line-height:24px;
+	color:#fafcf9;
+	text-shadow:0 3px 4px #000000;
+	font-weight:normal;
+	margin:48px 0 0 15px;
+	display:inline-block;
+}
+.header div.featured p {
+	width:378px;
+	color:#fafcf9;
+	font-size:12px;
+	line-height:24px;
+	/*background:url(../images/bg-transparent.png);*/
+	margin: 26px 0 0;
+	padding: 15px 20px 0 15px;
+	width: 341px;
+}
+.header div.featured p a {
+	background:none;
+	width:auto;
+	height:auto;
+	margin:0;
+	display:inline;
+	color:#97e50d;
+	text-decoration:none;
+}
+.header div.featured p a:hover {
+	text-decoration:underline;
+}
+
+.header div.featured a {
+	background:url(../images/button-view-more.jpg) no-repeat;
+	display:block;
+	height:36px;
+	width:186px;
+	margin:21px 0 0 15px;
+	text-indent:-99999px;
+}
+.header div.featured a:hover {
+	background:url(../images/button-view-more-hover.jpg) no-repeat;
+}
+
+.header div.featured button {
+	background-image: -webkit-linear-gradient(#8ab33b 10%, #608111 80%);
+	height:36px;
+	width:186px;
+	margin:21px 0 0 15px;
+	border: none;
+	border-radius: 3px;
+	color:#f9fafd;
+	font-size:20px;
+	text-shadow:0 2px 2px #242d36;
+	line-height:24px;
+	text-transform:uppercase;
+	font-family: 'Conv_JockeyOne-Regular';
+	font-weight:normal;
+}
+.header div.featured button:hover {
+	color:#fc9131;
+	text-shadow:0 2px 2px #242d36;
+	background: #8ab33b;
+}
+.header-about {
+	position:static;
+}
+.header-about div.featured {
+	background:url(../images/featured.png) no-repeat;
+	height:360px;
+	margin:0 0 60px;
+  color:#d9d9d9;
+
+}
+.header-about div.featured h2 {
+	display:block;
+	font-family: 'Conv_JockeyOne-Regular';
+	color:#fafcf9;
+	text-shadow:0 3px 4px #000000;
+	font-size:42px;
+	line-height:36px;
+	font-style:italic;
+	margin:128px 0 0 50px;
+	display:inline-block;
+}
+.header-about div.featured span {
+	display:block;
+	font-size:20px;
+	line-height:36px;
+	color:#a9a7a7;
+	text-shadow:0 3px 4px #000000;
+	font-style:italic;
+	margin:9px 0 0 300px;
+	padding: 0 40px 0 0;
+}
+.header-news div.featured {
+	background:url(../images/clean.jpg) no-repeat right 18px;
+	padding:18px 0 0;
+	height:402px;
+}
+.header-news .featured h4, .header-contact .featured h4 {
+	margin:0;
+	background:url(../images/bg-title.png) no-repeat;
+	width:378px;
+	height:36px;
+	font-size:24px;
+	line-height:29px;
+	color:#fafcf9;
+	font-family: 'Conv_JockeyOne-Regular';
+	font-weight:normal;
+	padding: 0 0 0 15px;
+}
+.header-news .featured h3, .header-contact .featured h3 {
+	margin:18px 0 0 15px;
+	font-family: 'Conv_JockeyOne-Regular';
+	font-size:32px;
+	line-height:36px;
+	color:#fafcf9;
+	text-shadow:0 3px 4px #000000;
+	font-weight:normal;
+}
+.header-news .featured p, .header-contact .featured p {
+	background:none!important;
+	margin: 15px 0 0 !important;
+	padding: 0 0 0 15px !important;
+}
+.header-contact div.featured {
+	background: url(../images/founders.png) no-repeat right 18px;
+	padding:18px 0 0;
+	height:402px;
+}
+/*------------------------- Slider -------------------------*/
+.myslider {
+	width: auto;
+	background: #232123; /* change? */
+	padding: 0px 40px 40px 40px;
+	margin:-0px 0 0;
+
+}
+
+
+/*------------------------- Body ---------------------------*/
+.body {
+	border-top:6px solid #608111;
+	background: #232123; /* change? */
+	margin:-60px 0 0;
+	padding: 18px 0 28px 18px;
+	overflow:hidden;
+}
+
+/*------------------------- Side Bar -------------------------*/
+.body div.sidebar {
+	width:192px;
+	float:left;
+	margin: 0 60px 0 0;
+}
+.body div.sidebar div:first-child {
+	overflow: hidden;
+	padding:0 0 18px;
+	margin:0;
+}
+.body div.sidebar div {
+	background: none #1b1b1b;
+	margin:36px 0 0;
+}
+.body div.sidebar div h3 {
+	height:24px;
+	/*background:none #87c315;*/
+	background-image: -webkit-linear-gradient(#94bf2c 2%, #608111 80%);
+	padding:0 0 0 12px;
+	color:#f9fafd;
+	font-size:14px;
+	line-height:24px;
+	text-transform:uppercase;
+	display:block;
+	margin:0;
+	font-family: 'Conv_JockeyOne-Regular';
+	font-weight:normal;
+}
+.body div.sidebar div a#twitter {
+	background:url(../images/icons.png) no-repeat;
+	width:28px;
+	height:24px;
+	text-indent:-99999px;
+	display:block;
+	float:left;
+	margin:18px 0 0 18px;
+}
+.body div.sidebar div a#twitter:hover {
+	background:url(../images/icons.png) no-repeat 0 -73px;
+}
+.body div.sidebar div a#fb {
+	background:url(../images/icons.png) no-repeat 0 -25px;
+	width:27px;
+	height:23px;
+	text-indent:-99999px;
+	display:block;
+	float:left;
+	margin:18px 38px 0;
+}
+.body div.sidebar div a#fb:hover {
+	background:url(../images/icons.png) no-repeat 0 -98px;
+}
+.body div.sidebar div a#googleplus {
+	background:url(../images/icons.png) no-repeat 0 -49px;
+	width:23px;
+	height:23px;
+	text-indent:-99999px;
+	display:block;
+	float:left;
+	margin:18px 0 0;
+}
+.body div.sidebar div a#googleplus:hover {
+	background:url(../images/icons.png) no-repeat 0 -122px;
+}
+
+.body div.sidebar div div ul {
+	list-style:none;
+	padding:0 12px 6px;
+	margin:18px 0 0;
+}
+.body div.sidebar div div ul li {
+}
+.body div.sidebar div div ul li h4 {
+	margin:0;
+	display:block;
+}
+.body div.sidebar div div ul li h4 a {
+	color:#f9fafd;
+	font-size:16px;
+	line-height:24px;
+	display:block;
+	margin:0;
+	font-family: 'Conv_JockeyOne-Regular';
+	font-weight:normal;
+	text-decoration:none;
+}
+.body div.sidebar div div ul li h4 a:hover {
+	color:#fbf3bd;
+}
+.body div.sidebar div div ul li p {
+	color:#939494;
+	font-size:11px;
+	line-height:24px;
+	margin:2px 0 22px;
+	font-family: 'Conv_OpenSans-Regular';
+}
+.body div.sidebar div ul li p a {
+	text-decoration:none;
+	color:#a0ed17;
+}
+.body div.sidebar div ul li p a:hover {
+	text-decoration:underline;
+}
+
+
+/*------------------------- Content -------------------------*/
+
+.body div.content {
+	float:left;
+	width:690px;
+}
+.body div.content h1 {
+	color:#fafcf9;
+	font-size:46px;
+	line-height:24px;
+	font-family: 'Conv_JockeyOne-Regular';
+	margin:55px 0 40px;
+	font-weight:normal;
+}
+.body div.content a {
+}
+.body div.content a img {
+}
+.body div.content p {
+	color:#2a2a2a;
+	font-size:12px;
+	line-height:24px;
+	text-align:justify;
+	margin:31px 0 0;
+	padding: 0 40px 0 0;
+}
+.body div.content h4 {
+	height:74px;
+	background:url(../images/bg-title-big.png) no-repeat;
+	/*background-image: -webkit-linear-gradient(#2b2b2b 20%, #d16314 80%);*/
+	display:block;
+	margin: 0px 0px 0px 0px;
+	font-family: 'Conv_JockeyOne-Regular';
+	font-size:27px;
+	line-height:55px;
+	color:#fafcf9;
+	font-weight:normal;
+	text-transform:uppercase;
+	padding: 0 0 0 15px;
+}
+
+.body div.content h5 {
+	margin:0;
+	background:url(../images/bg-title.png) no-repeat;
+	width:378px;
+	height:36px;
+	font-size:24px;
+	line-height:29px;
+	color:#c3f73b;
+	font-family: 'Conv_JockeyOne-Regular';
+	font-weight:normal;
+	padding: 0 0 0 15px;
+}
+
+.body div.content h4 span {
+	color:#fc9131;
+	font-size:36px;
+}
+.body div.content h3 {
+	color:#94bf2c;
+	font-size:18px;
+	line-height:24px;
+	font-family: 'Conv_OpenSans-Regular';
+	margin:0;
+	font-style:italic;
+	text-transform:uppercase;
+	font-weight:bold;
+}
+.body div.content p {
+	color:#b9b9b9;
+	font-size:14px;
+	line-height:24px;
+	margin:22px 0 22px;
+	text-align:left;
+}
+.body div.content p a {
+	color:#343434;
+	text-decoration:underline;
+}
+.body div.content p a:hover {
+	color:#87c315;
+}
+.body div.content ul {
+	list-style:none;
+	padding:0 18px 0 0;
+	margin:0;
+}
+.body div.content ul li:first-child {
+	background:none;
+	margin:0;
+	padding:0;
+}
+.body div.content ul li {
+	overflow:hidden;
+	background:url(../images/border.png) repeat-x left top;
+	margin:23px 0 0;
+	padding:25px 0 0;
+}
+.body div.content ul li span {
+	display:block;
+	height:24px;
+	background:none #414141;
+	font-size:10px;
+	line-height:24px;
+	color:#f9fafd;
+	padding:0 0 0 15px;
+	font-family: 'Conv_OpenSans-Regular';
+	margin:0 0 24px;
+}
+.body div.content ul li a {
+	display:block;
+	float:left;
+	margin:0 23px 0 0;
+}
+.body div.content ul li a img {
+	border:3px solid #fff;
+}
+.body div.content ul li a img:hover {
+	filter:alpha(opacity=80);/* Needed for IE7 */
+	opacity:0.8;
+}
+.body div.content ul li div {
+	float:left;
+	width:360px;
+}
+.body div.content ul li div h3 {
+	margin:0 0 18px;
+	display:inline-block;
+	color:#fc9131;
+	font-size:26px;
+	line-height:27px;
+	font-family: 'Conv_JockeyOne-Regular';
+	font-style:normal;
+	text-transform:none;
+	font-weight:normal;
+	text-decoration:none;
+}
+
+
+.body div.content h6 {
+	margin:18px 0 18px;
+	display:inline-block;
+	color:#fff;
+	font-size:24px;
+	line-height:30px;
+	font-family: 'Conv_JockeyOne-Regular';
+	font-style:normal;
+	text-transform:none;
+	font-weight:normal;
+	text-decoration:none;
+}
+
+	.body div.content h7 {
+	color:#e3e0e2;
+	font-size:16px;
+	line-height:24px;
+	margin:10px 0 2px;
+	text-align:left;
+	display: block;
+	font-family: 'Conv_OpenSans-Regular';
+	font-style:italic;
+	}
+
+
+.body div.content ul li div h3 a:hover {
+	text-decoration:underline;
+}
+.body div.content ul li div p {
+	font-family: 'Conv_OpenSans-Regular';
+	font-size:16px;
+	line-height:24px;
+	font-style:italic;
+	color:#d0cdd0;
+	margin: 0px 0px 0px 0px;
+	padding:0;
+	text-align: justify;
+}
+.body div.content ul li div p a {
+	margin:0;
+	float:none;
+	display:inline;
+}
+.body div.content ul li div a {
+	font-size:12px;
+	line-height:24px;
+	color:#87c315;
+	font-family: 'Conv_OpenSans-Regular';
+	letter-spacing:-0.025em;
+}
+.body div.content ul li div a:hover {
+	color:#414141;
+}
+
+.body div.content button {
+	background-image: -webkit-linear-gradient(#8ab33b 10%, #608111 80%);
+	height:25px;
+	width:140px;
+	margin: 20px 10px 0 0px;
+	border: none;
+	border-radius: 3px;
+	color:#f9fafd;
+	font-size:15px;
+	text-shadow:0 1px 1px #242d36;
+	line-height:24px;
+	text-transform:uppercase;
+	font-family: 'Conv_JockeyOne-Regular';
+	font-weight:normal;
+}
+.body div.content button:hover {
+	color:#f9fafd;
+	text-shadow:0 1px 1px #242d36;
+	background-image: -webkit-linear-gradient(#fc9131 10%, #7f3f19 80%);
+}
+
+
+
+/*------------------------- Form -------------------------*/
+.body div.contact p {
+	margin:0 0 20px;
+}
+.body div form {
+	padding:0 40px 0 0;
+	overflow:hidden;
+}
+.body div form input {
+	padding:10px 5px;
+	width:398px;
+	background:none #fff;
+	border:0;
+	margin:0 10px 12px 0;
+	color:#060606;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	line-height:18px;
+}
+.body div form input#email {
+	margin-bottom:35px;
+}
+
+.body div form select {
+	padding:10px 5px;
+	border-radius: 0;
+
+         -webkit-appearance: none; /*--menu--*/
+         -moz-appearance: none;
+          appearance: none;
+	width:408px;
+	background:none #fff;
+	border:0;
+	margin:0 10px 12px 0;
+	color:#060606;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	line-height:18px;
+	outline:none;
+}
+
+.body div form label {
+	color:#87c315;
+	font-style:italic;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	line-height:24px;
+
+	margin:0;
+	display:block;
+	position:relative;
+}
+.body div form label span {
+	color:#87c315;
+	font-style:italic;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	line-height:24px;
+	margin:0;
+	position:absolute;
+	top:150px;
+}
+.body div form textarea {
+	color:#060606;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	line-height:24px;
+	border:0;
+	resize:none;
+	width:398px;
+	padding:5px;
+	height:326px;
+	margin:0 12px 29px 0;
+	overflow:auto;
+}
+.body div form input#subscribe {
+	padding:0;
+	width:auto;
+	height:auto;
+	clear:both;
+	margin:4px 10px 0 0;
+	vertical-align:top;
+	*margin:-2px 10px 0 0;/* Needed for IE7 */
+}
+.body div form input#agree {
+	padding:0;
+	width:auto;
+	height:auto;
+	clear:both;
+	margin:4px 10px 0 0;
+	*margin:-2px 10px 0 0;/* Needed for IE7 */
+}
+.body div form label.subscribe {
+	width:185px;
+	float:left;
+	font-size:12px;
+	line-height:22px;
+	color:#848080;
+	font-style:normal;
+}
+.body div form label.agree {
+	width:225px;
+	float:left;
+	font-size:12px;
+	line-height:22px;
+	color:#848080;
+	font-style:normal;
+	*width:235px;/* Needed for IE7 */
+}
+.body div form input#submit {
+	background:url(../images/button-send.png) no-repeat;
+	clear: both;
+	display: block;
+	float: left;
+	height: 36px;
+	margin: 29px 0 0 222px;
+	padding: 0;
+	width: 186px;
+	cursor:pointer;
+}
+.body div form input#submit:hover {
+	background:url(../images/button-send-hover.png) no-repeat;
+}
+
+.body div form button {
+	background-image: -webkit-linear-gradient(#8ab33b 10%, #608111 80%);
+	height:36px;
+	width:186px;
+	margin: 20px 0 0 222px;
+	border: none;
+	border-radius: 3px;
+	color:#f9fafd;
+	font-size:18px;
+	text-shadow:0 1px 1px #242d36;
+	line-height:24px;
+	text-transform:uppercase;
+	font-family: 'Conv_JockeyOne-Regular';
+	font-weight:normal;
+}
+.body div form button:hover {
+	color:#fc9131;
+	text-shadow:0 1px 1px #242d36;
+	background: #8ab33b;
+}
+
+
+/*------------------------- Footer -------------------------*/
+.footer {
+	background:url(../images/bg-footer.png) no-repeat;
+	width:960px;
+	height:52px;
+	margin:42px 0 72px;
+}
+.footer ul {
+	float:left;
+	list-style:none;
+	margin:0;
+	overflow:hidden;
+	padding: 14px 0 0 15px;
+}
+.footer ul li:first-child {
+	background:none;
+	padding-left:0;
+}
+.footer ul li {
+	background:url(../images/border-footer-nav.png) no-repeat left 8px;
+	float:left;
+	padding:0 21px;
+}
+.footer ul li a {
+	color:#6a8166;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:12px;
+	line-height:16px;
+	text-decoration:none;
+}
+.footer p {
+	color:#6a8166;
+	float:right;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:12px;
+	line-height:16px;
+	margin:16px 0 0;
+	text-decoration:none;
+	padding:0 15px 0 0;
+}
+
+/*------------------------- Modal -------------------------*/
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+		position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Sit on top */
+    width: auto; /* Full width */
+    height: auto; /* Full height */
+    overflow: none;; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #dcd9dc;
+    margin: auto;
+    padding: 0;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.modal div.close {
+    color: #fc9131;
+		padding-left: 97%;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.modal div.close:hover,
+
+.modal div.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    background-color: #3c4922;
+		padding: 0px 16px;
+		box-sizing: border-box;
+
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+
+    background-color: #608111;
+		padding: 2px 16px;
+		box-sizing: border-box;
+}
+
+/*------------------------- Datepicker -------------------------*/
+
+
+.ui-datepicker {
+	background-color: #302f36;
+  width: auto;
+  height: auto;
+  margin: 5px auto 0;
+  font: 9pt Arial, sans-serif;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .5);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .5);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .5);
+}
+
+.ui-datepicker a {
+  text-decoration: none;
+}
+
+.ui-datepicker table {
+  width: 100%;
+}
+
+.ui-datepicker-header {
+	background-color: #3b4821;
+  color: #e0e0e0;
+  font-weight: bold;
+  -webkit-box-shadow: inset 0px 1px 1px 0px rgba(250, 250, 250, 2);
+  -moz-box-shadow: inset 0px 1px 1px 0px rgba(250, 250, 250, .2);
+  box-shadow: inset 0px 1px 1px 0px rgba(250, 250, 250, .2);
+  text-shadow: 1px -1px 0px #000;
+  filter: dropshadow(color=#000, offx=1, offy=-1);
+  line-height: 30px;
+  border-width: 1px 0 0 0;
+  border-style: solid;
+  border-color: #111;
+}
+
+.ui-datepicker-title {
+  text-align: center;
+}
+
+.ui-datepicker-prev, .ui-datepicker-next {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.ui-datepicker-prev {
+  float: left;
+  background-position: center -30px;
+}
+.ui-datepicker-next {
+  float: right;
+  background-position: center 0px;
+}
+
+
+.ui-datepicker thead {
+  background-color: #f7f7f7;
+  background-image: -moz-linear-gradient(top,  #f7f7f7 0%, #f1f1f1 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7f7f7), color-stop(100%,#f1f1f1));
+  background-image: -webkit-linear-gradient(top,  #f7f7f7 0%,#f1f1f1 100%);
+  background-image: -o-linear-gradient(top,  #f7f7f7 0%,#f1f1f1 100%);
+  background-image: -ms-linear-gradient(top,  #f7f7f7 0%,#f1f1f1 100%);
+  background-image: linear-gradient(top,  #f7f7f7 0%,#f1f1f1 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#f1f1f1',GradientType=0 );
+  border-bottom: 1px solid #bbb;
+}
+
+.ui-datepicker th {
+  text-transform: uppercase;
+  font-size: 6pt;
+  padding: 5px 0;
+  color: #666666;
+  text-shadow: 1px 0px 0px #fff;
+  filter: dropshadow(color=#fff, offx=1, offy=0);
+}
+.ui-datepicker tbody td {
+  padding: 0;
+  border-right: 1px solid #bbb;
+}
+
+.ui-datepicker tbody td:last-child {
+  border-right: 0px;
+}
+
+.ui-datepicker tbody tr {
+  border-bottom: 1px solid #bbb;
+}
+.ui-datepicker tbody tr:last-child {
+  border-bottom: 0px;
+}
+
+.ui-datepicker td span, .ui-datepicker td a {
+  display: inline-block;
+  font-weight: bold;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  color: #666666;
+  text-shadow: 1px 1px 0px #fff;
+  filter: dropshadow(color=#fff, offx=1, offy=1);
+}
+.ui-datepicker-calendar .ui-state-default {
+  background: #ededed;
+  background: -moz-linear-gradient(top,  #ededed 0%, #dedede 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ededed), color-stop(100%,#dedede));
+  background: -webkit-linear-gradient(top,  #ededed 0%,#dedede 100%);
+  background: -o-linear-gradient(top,  #ededed 0%,#dedede 100%);
+  background: -ms-linear-gradient(top,  #ededed 0%,#dedede 100%);
+  background: linear-gradient(top,  #ededed 0%,#dedede 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#dedede',GradientType=0 );
+  -webkit-box-shadow: inset 1px 1px 0px 0px rgba(250, 250, 250, .5);
+  -moz-box-shadow: inset 1px 1px 0px 0px rgba(250, 250, 250, .5);
+  box-shadow: inset 1px 1px 0px 0px rgba(250, 250, 250, .5);
+}
+.ui-datepicker-unselectable .ui-state-default {
+  background: #f4f4f4;
+  color: #b4b3b3;
+}
+
+.ui-datepicker-calendar .ui-state-hover {
+  background: #f7f7f7;
+}
+
+.ui-datepicker-calendar .ui-state-active {
+  background: #8ab33b;
+  -webkit-box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, .1);
+  -moz-box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, .1);
+  box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, .1);
+  color: #e0e0e0;
+  text-shadow: 0px 1px 0px #6b8a02;
+  filter: dropshadow(color=#6b8a02, offx=0, offy=1);
+  border: 1px solid #55838f;
+  position: relative;
+  margin: -1px;
+}
+
+.ui-datepicker-calendar td:first-child .ui-state-active {
+  width: 29px;
+  margin-left: 0;
+}
+.ui-datepicker-calendar td:last-child .ui-state-active {
+  width: 29px;
+  margin-right: 0;
+}
